@@ -1,0 +1,30 @@
+body {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 150px;
+}
+
+.loader {
+    width: 300px;
+    height: 350px;
+    /* border: 6px solid orange; */
+    /* border-top: 23px double orange;
+    border-bottom: 23px double purple;
+    border-left: 23px double crimson;
+    border-right: 23px double green; */
+    border-radius: 65%;
+    animation: julian 0.5s linear  infinite;
+    transition: 0.5s;
+    border: 2px solid red; /* puede ser 8 o 2 */
+}
+
+@keyframes julian {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+       transform: scale(1.6);
+    }
+}
